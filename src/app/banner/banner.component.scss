@@ -1,0 +1,15 @@
+@use "../common";
+
+:host {
+    width: 100%;
+    height: 360px;
+    background-color: aqua;
+    display: flex;
+
+    &.gradient {
+        background: -moz-linear-gradient(180deg, common.$color-main-dark 0%, rgba(0, 0, 0, 0) 100%);
+        background: -webkit-linear-gradient(180deg, common.$color-main-dark 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(180deg, common.$color-main-dark 0%, rgba(0, 0, 0, 0) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#222222", endColorstr="#000000", GradientType=1);
+    }
+}

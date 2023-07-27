@@ -1,0 +1,22 @@
+@use '../common';
+
+:host {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    min-width: 180px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: common.$color-main-light;
+
+    &:hover {
+        background-color: common.$color-main-light;
+        color: common.$color-main-dark;
+    }
+}

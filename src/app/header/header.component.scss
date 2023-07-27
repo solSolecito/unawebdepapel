@@ -1,0 +1,29 @@
+@use '../common';
+
+:host {
+    background-color: common.$color-main-dark;
+    color: common.$color-main-light;
+    display: block;
+}
+
+.compact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .logo {
+        height: 120px;
+    }
+}
