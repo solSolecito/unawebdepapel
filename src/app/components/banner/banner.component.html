@@ -1,0 +1,13 @@
+<section  [ngStyle]="{'background-image': src ? 'url('+src+')' : 'none'}">
+    <div *ngIf="gradient" class="gradient">
+    </div>
+    <div *ngIf="!gradient" class="square">
+    </div>
+    <div class="content">
+        <div class="texts">
+            <p>{{text}}</p>
+            <p *ngIf="smallText">{{smallText}}</p>
+        </div>
+        <div class="button"></div>
+    </div>
+</section>

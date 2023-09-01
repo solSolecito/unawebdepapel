@@ -1,9 +1,14 @@
 <app-header></app-header>
 <main>
-    <app-banner
-    [gradient]="banners[0].gradient"
-    [text]="banners[0].text"
-    [src]="banners[0].src"
-    ></app-banner>
+    <app-banner 
+        [gradient]="banners[0].gradient" 
+        [text]="banners[0].text" [src]="banners[0].src"
+    >
+    </app-banner>
+    <app-grid 
+        [title]="novedades.title" 
+        [subtitle]="novedades.subtitle"
+    >
+    </app-grid>
 
 </main>

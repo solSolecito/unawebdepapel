@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./store-screen.component.scss']
 })
 export class StoreScreen {
-
+  grids = [
+    {
+      title: 'MÁSCARAS',
+      src: '../../assets/images/banner1-local.jpg',
+      subtitle: 'Tenemos la obra perfecta para ti',
+    }
+  ]
 }
