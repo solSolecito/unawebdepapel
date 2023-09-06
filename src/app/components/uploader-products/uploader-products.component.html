@@ -1,1 +1,130 @@
-<p>uploader-products works!</p>
+<form name="upload-product">
+    <fieldset>
+      <legend>General</legend>
+      <p>
+        <label for="...">Nombre Modelo *</label> <input type="text" name="..." id="..." value="{{name}}" required />
+      </p>
+      <p>
+        <label for="...">Tipo</label> <input type="text" name="..." value="{{type}}" id="..." />
+      </p>
+      <p>
+        <label for="...">Material</label> <input type="text" name="..." value="{{material}}" id="..." />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Ficha Técnica</legend>
+      <p>
+        <label for="...">Diseñador</label> <input type="text" name="..." value="{{designer}}" id="..." />
+      </p>
+      <p>
+        <label for="...">Dificultad *</label> <input type="text" name="..." value="{{dif}}" id="..." required />
+      </p>
+      <!-- Corte -->
+      <p>
+        <label for="...">Páginas</label> <input type="text" name="..." value="{{pages}}" id="..."/>
+      </p>
+      <p>
+        <label for="...">Piezas</label> <input type="text" name="..." value="{{pieces}}" id="..." required />
+      </p>
+      <p>
+        <label for="...">Digitalizado</label> <input type="text" name="..." value="{{cameo.digital}}" id="..." required />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Cameo</legend>
+      <p>
+        <label for="...">Tapetes de corte</label> <input type="text" name="..." value="{{cameo.mats}}" id="..." />
+      </p>
+      <p>
+        <label for="...">Tiempo de corte</label> <input type="text" name="..." value="{{cameo.time}}" id="..." required />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Adicional</legend>
+      <p>
+        <label for="...">Notas</label> <input type="text" name="..." value="{{notes}}" id="..." />
+      </p>
+      <p>
+        <label for="tags">Tags</label> <input type="text" name="tags" value="{{tags}}" id="tags" />
+      </p>
+      <p>
+        <label for="stock">Stock</label> <input type="text" name="stock" value="{{stock}}" id="size" />
+      </p>
+      <p>
+        <label for="size">Talla</label> <input type="text" name="size" value="{{size}}" id="size" />
+      </p>
+      <p>
+        <input type="text" name="..." id="..." required /> <input type="text" name="..." id="..." required />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Costos</legend>
+      <table>
+        <tr>
+          <th>Precios Sugeridos
+          </th>
+          <th> Directa </th>
+          <th> MS </th>
+          <th> ML </th>
+        </tr>
+        <tr>
+          <td>
+            Modelo Armado
+          </td>
+          <td id="sug-dr-a"></td>
+          <td id="sug-ms-a"></td>
+          <td id="sug-ml-a"></td>
+        </tr>
+        <tr>
+          <td>
+            Kit
+          </td>
+          <td id="sug-dr-k"></td>
+          <td id="sug-ms-k"></td>
+          <td id="sug-ml-k"></td>
+        </tr>
+        <tr>
+          <td>
+            Plantilla Pre Cortada
+          </td>
+          <td id="sug-dr-p"></td>
+          <td id="sug-ms-p"></td>
+          <td id="sug-ml-p"></td>
+        </tr>
+      </table>
+      <button id="use-sug">Usar Precios Sugeridos</button>
+      <table>
+        <tr>
+          <th>Precios Sugeridos
+          </th>
+          <th> Directa </th>
+          <th> MS </th>
+          <th> ML </th>
+        </tr>
+        <tr>
+          <td>
+            Modelo Armado
+          </td>
+          <td id="sug-dr-a"></td>
+          <td id="sug-ms-a"></td>
+          <td id="sug-ml-a"></td>
+        </tr>
+        <tr>
+          <td>
+            Kit
+          </td>
+          <td id="sug-dr-k"></td>
+          <td id="sug-ms-k"></td>
+          <td id="sug-ml-k"></td>
+        </tr>
+        <tr>
+          <td>
+            Plantilla Pre Cortada
+          </td>
+          <td id="sug-dr-p"></td>
+          <td id="sug-ms-p"></td>
+          <td id="sug-ml-p"></td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
