@@ -1,14 +1,151 @@
 <p>El gestor de productos me permite ver una lista de productos, subir nuevos productos, editarlos </p>
-
 <section>
-    Subir productos
-    <form name="upload-products">
-        <!-- Recibe CSV -->
-        <input type="file" id="upload-products-file"/>
-    </form>
+
+  <p>Necesito 3 componentes: list-product, list-products, product-uploader </p>
+  
+  <h3>Subir productos</h3>
+
+  <h4>Por lotes</h4>
+  <form name="upload-products">
+    <!-- Recibe CSV y JSON -->
+    <input type="file" id="upload-products-file" />
+  </form>
+  
+  <h4>Individualmente</h4>
+  <form name="upload-product">
+    <!-- Deberia haber 2 formas de subir un solo producto -->
+    <fieldset>
+      <legend>General</legend>
+      <p>
+        <label for="...">Nombre Modelo *</label> <input type="text" name="..." id="..." required />
+      </p>
+      <p>
+        <label for="...">Tipo</label> <input type="text" name="..." id="..." />
+      </p>
+      <p>
+        <label for="...">Material</label> <input type="text" name="..." id="..." />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Ficha Técnica</legend>
+      <p>
+        <label for="...">Diseñador</label> <input type="text" name="..." id="..." />
+      </p>
+      <p>
+        <label for="...">Dificultad *</label> <input type="text" name="..." id="..." required />
+      </p>
+      <!-- Corte -->
+      <p>
+        <label for="...">Páginas</label> <input type="text" name="..." id="..." required />
+      </p>
+      <p>
+        <label for="...">Piezas</label> <input type="text" name="..." id="..." required />
+      </p>
+      <p>
+        <label for="...">Digitalizado</label> <input type="text" name="..." id="..." required />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Cameo</legend>
+      <p>
+        <label for="...">Tapetes de corte</label> <input type="text" name="..." id="..." />
+      </p>
+      <p>
+        <label for="...">Tiempo de corte</label> <input type="text" name="..." id="..." required />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Fotos</legend>
+      <p>
+        <label for="...">Fotos</label> <input type="file" id="upload-product-photos" />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Adicional</legend>
+      <p>
+        <label for="...">Notas</label> <input type="text" name="..." id="..." />
+      </p>
+      <p>
+        <input type="text" name="..." id="..." required /> <input type="text" name="..." id="..." required />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>Costos</legend>
+      <table>
+        <tr>
+          <th>Precios Sugeridos
+          </th>
+          <th> Directa </th>
+          <th> MS </th>
+          <th> ML </th>
+        </tr>
+        <tr>
+          <td>
+            Modelo Armado
+          </td>
+          <td id="sug-dr-a"></td>
+          <td id="sug-ms-a"></td>
+          <td id="sug-ml-a"></td>
+        </tr>
+        <tr>
+          <td>
+            Kit
+          </td>
+          <td id="sug-dr-k"></td>
+          <td id="sug-ms-k"></td>
+          <td id="sug-ml-k"></td>
+        </tr>
+        <tr>
+          <td>
+            Plantilla Pre Cortada
+          </td>
+          <td id="sug-dr-p"></td>
+          <td id="sug-ms-p"></td>
+          <td id="sug-ml-p"></td>
+        </tr>
+      </table>
+      <button id="use-sug">Usar Precios Sugeridos</button>
+      <table>
+        <tr>
+          <th>Precios Sugeridos
+          </th>
+          <th> Directa </th>
+          <th> MS </th>
+          <th> ML </th>
+        </tr>
+        <tr>
+          <td>
+            Modelo Armado
+          </td>
+          <td id="sug-dr-a"></td>
+          <td id="sug-ms-a"></td>
+          <td id="sug-ml-a"></td>
+        </tr>
+        <tr>
+          <td>
+            Kit
+          </td>
+          <td id="sug-dr-k"></td>
+          <td id="sug-ms-k"></td>
+          <td id="sug-ml-k"></td>
+        </tr>
+        <tr>
+          <td>
+            Plantilla Pre Cortada
+          </td>
+          <td id="sug-dr-p"></td>
+          <td id="sug-ms-p"></td>
+          <td id="sug-ml-p"></td>
+        </tr>
+      </table>
+    </fieldset>
+  </form>
 </section>
 
 <section>
-    Lista de productos
+  <h3>Lista de productos</h3>
+  <div>
+    Panel Mostrar/Ocultar Cameo Notas Precios Tiempos Costos
+    <div>Miniatura Nombre Tipo Material Diseñador Dificultad Páginas Piezas Colores Estándar Precio </div>
+  </div>
 </section>
-
