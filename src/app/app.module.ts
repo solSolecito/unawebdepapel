@@ -19,6 +19,9 @@ import { HomeScreen } from './screens/home-screen/home-screen.component';
 import { StoreScreen } from './screens/store-screen/store-screen.component';
 import { GeneratorCatalogsScreen } from './screens/generator-catalogs/generator-catalogs.component';
 import { GestorProductsScreen } from './screens/gestor-products/gestor-products.component';
+import { ProductLiComponent } from './components/product-li/product-li.component';
+import { ListProductsComponent } from './components/list-products/list-products.component';
+import { UploaderProductsComponent } from './components/uploader-products/uploader-products.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { GestorProductsScreen } from './screens/gestor-products/gestor-products.
     GeneratorCatalogsScreen,
     GestorProductsScreen,
     GridComponent,
-    GridProductComponent
+    GridProductComponent,
+    ProductLiComponent,
+    ListProductsComponent,
+    UploaderProductsComponent
   ],
   imports: [
     BrowserModule,
